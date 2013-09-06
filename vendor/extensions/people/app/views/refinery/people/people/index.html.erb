@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scg</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/main.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class='container'>
+  <div class='row'>
+    <div class='col-lg-4'><img src='/assets/logo.png'></div>
+    <div class='col-lg-8'>
+    <br />
+        <br />
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/services/day-school">Day School</a></li>
+                <li><a href="/services/college">College</a></li>
+                <li><a href="/services/boarding-school">Boarding School</a></li>
+                <li><a href="/services/gap-year">Gap Year</a></li>
+                <li><a href="/services/therapeutic-schools">Therapeutic Schools</a></li>
+              </ul>
+            </li>
+            <li><a href="/people">Meet Us</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/faq/why-hire-a-consultant">Why Hire a Consultant</a></li>
+                <li><a href="/faq/why-hire-scg">Why Hire SCG</a></li>
+                <li><a href="/faq/what-is-our-process">What is Our Process</a></li>
+              </ul>
+            </li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-lg-12'>
+      <h2>Our Team</h2>
+      <p>The School Counseling Group is a small group of professionals dedicated to providing outstanding service
+        for clients. Collectively, our consultants have spent decades in a variety of settings as teachers,
+        administrators, counselors and coaches. Our uniqueness as a firm is our capacity to collaborate,
+        formally and informally, as a diverse team of counselors operating together under one roof and with
+        a shared sense of purpose. When you work with any one of us, you are supported by the experience and
+        wisdom of the entire team:</p>
+    </div>
+  </div>
+  <div class='row'>
+  	<% @people.each do |person| %>
+	    <div class='col-lg-2'>
+	      <%= image_fu person.photo, '100x' %>
+	    </div>
+	    <div class='col-lg-10'>
+	      <h4><%= person.name %></h4>
+	      <%= person.content %>
+	    </div>
+    <% end %>
+  </div>
+  <footer class="footer">
+    <center>
+      <h6>4725 MacArthur Blvd NW - Washington DC 20007-1904. Phone: 202-333-3530 - Email:guidance@schoolcounseling.com</h6>
+      <h6>Copyright &#169;2013 The School Counseling Group, Inc.</h6>
+    </center>
+  </footer>
+	</div>
+</body>
+</html>
+
