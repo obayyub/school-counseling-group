@@ -70,6 +70,20 @@ hr.midbar {
   margin-right: 15px;
 }
 
+.services {
+list-style-image:url('/assets/arrowlist.gif');
+}
+
+.services li {
+  margin-bottom: 5px;
+}
+
+.services li a {
+  color: #656253;
+  font-family: Ariel, serif;
+  font-size: 14px;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
