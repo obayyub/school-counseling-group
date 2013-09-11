@@ -1,0 +1,108 @@
+/* general layout formatting */
+html, body {
+  width: 100%; height: 100%; background-color: #a4a3c7;
+}
+
+body {
+  margin-top: 20px;
+}
+
+.container {
+  width: 80%; min-height: 100%; background-color: #fff;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%; height: auto;
+}
+
+.header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: url('/assets/logo.png') no-repeat;
+  min-height: 100px;
+}
+
+.header img {
+  width: 303px;
+  height: 100px;
+}
+
+.header ul {
+  border-top: 1px dotted #000;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  margin-bottom: 3px;
+}
+
+.dottedright {
+  border-right: 1px dotted #000;
+}
+
+.header ul>li>a {
+  color: #000 !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.footer {
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+}
+
+.footer p {
+  color: #999689;
+  font-family: Ariel, serif !important;
+  font-size: 11px;
+}
+
+.footer hr {
+  border-top: double #000 1px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+hr.midbar {
+  border-top: 1px solid #000;
+    margin-left: 15px;
+  margin-right: 15px;
+}
+
+.services {
+list-style-image:url('/assets/arrowlist.gif');
+}
+
+.services li {
+  margin-bottom: 5px;
+}
+
+.services li a {
+  color: #656253;
+  font-family: Ariel, serif;
+  font-size: 14px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, sans-serif;
+  color: #3F5025;
+}
+
+p {
+  font-family: Ariel, serif;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.footer a, a:visited {
+  color: #df7034;
+}
+
+
+
