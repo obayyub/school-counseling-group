@@ -2,6 +2,8 @@ require "bundler/capistrano"
 
 server "162.243.1.219", :web, :app, :db, primary: true
 
+default_run_options[:shell] = '/bin/bash --login'
+
 set :application, "school-counseling-group"
 set :user, "deploy"
 set :repository,  "git@github.com:thetentmaker/school-counseling-group.git"
